@@ -11,3 +11,6 @@ A professional social experience. Currently project planning/ brainstorming.
 
 ## Notes
 updates and ideas as I work.
+
+- how to handle endorsements in db?
+- Limit 3 endorsements per day?
