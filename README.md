@@ -10,5 +10,4 @@ A professional social experience. Currently project planning/ brainstorming.
 - Styling: [Tailwind CSS](https://tailwindcss.com)
 
 ## Notes
-
 updates and ideas as I work.
