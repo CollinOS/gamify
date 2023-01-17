@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-function Profile() {
+export default function Profile() {
 
   return (
     <Layout>
@@ -11,5 +11,3 @@ function Profile() {
     </Layout>
   )
 }
-
-export default Profile
