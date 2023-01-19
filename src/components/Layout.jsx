@@ -4,8 +4,8 @@ import Footer from "./footer"
 
 const Layout = ({children}) => {
   return(
-    <div className="bg-gray-800">
-      <main className="flex flex-col justify-center px-8 bg-gray-800">
+    <div className="bg-primary">
+      <main className="flex flex-col justify-center px-8 bg-primary">
         <Navbar />
         {children}
         <Footer />

@@ -10,33 +10,34 @@ const Navbar = () => {
             to="/" 
             className={({ isActive }) =>
               isActive 
-              ? "font-semibold"
-              : "font-normal"
+              ? "text-amber-400 font-bold border-b b-2 border-amber-400 font-lores text-2xl tracking-wider"
+              : "text-amber-400 font-semibold font-lores text-2xl tracking-wider"
             }
           >
-            Home
+            GAMIFY
           </NavLink>
         </div>
-        <div>
+        <div className="flex flex-row items-center">
           <NavLink 
             to="/profile" 
             className={({ isActive }) =>
               isActive 
-              ? "font-semibold"
+              ? "font-semibold border-b b-2 border-red-500"
               : "font-normal"
             }
           >
             Profile
           </NavLink>
+          <div className="flex p-4"/>
           <NavLink 
             to="/test" 
             className={({ isActive }) =>
               isActive 
-              ? "font-semibold"
+              ? "font-semibold border-b b-2 border-emerald-500"
               : "font-normal"
             }
           >
-            Search
+            About
           </NavLink>
         </div>
       </nav>

@@ -10,7 +10,13 @@
       url("../fonts/GraphikRegular.woff") format("woff");
   }
 
+  @font-face {
+    font-family: "lores";
+    src: url("../fonts/LoRes12OTNarrow-Regular.woff2") format("woff2"),
+      url("../fonts/LoRes12OTNarrow-Regular.woff") format("woff");
+  }
+
   body {
-    @apply bg-gray-800 text-white font-graphik
+    @apply bg-primary text-white font-graphik
   }
 }

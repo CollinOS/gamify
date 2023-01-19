@@ -8,7 +8,11 @@ module.exports = {
     extend: {
       fontFamily: {
         graphik: ['graphik', 'sans-serif'],
+        lores: ['lores', 'sans-serif'],
       },
+      colors: {
+        'primary': '#18002e',
+      }
     },
   },
   plugins: [],
