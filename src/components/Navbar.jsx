@@ -26,7 +26,7 @@ const Navbar = () => {
               : "font-normal"
             }
           >
-            Profile
+            Skill Card
           </NavLink>
           <div className="flex p-4"/>
           <NavLink 
