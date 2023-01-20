@@ -11,17 +11,40 @@ const HomeHero = () => {
         Skills are broken up into [X] categories. Each skill is based out of 100. 
         This is some more text to see how it looks.
       </p>
-      <div className="p-2"/>
-      <div className="flex flex-row">
-        {/* SKILL NAMES */} 
-        <div className="flex flex-col">
-          <p>Strength</p>
-          <p>Strength</p>
+      <div className="p-4"/>
+      <div className="grid grid-cols-2 gap-4">
+        <div>
+          <p>
+            Strength
+          </p>
         </div>
-        {/* SKILL DESCRIPTIONS */}
-        <div className="flex flex-col">
-          <p>Skills are broken up into [X] categories. Each skill is based out of 100. 
-        This is some more text to see how it looks.</p>
+        <div>
+          <p>
+            Skills are broken up into [X] categories. Each skill is based out of 100. 
+            This is some more text to see how it looks.
+        </p>
+        </div>
+        <div>
+          <p>
+            Wisdom
+          </p>
+        </div>
+        <div>
+          <p>
+            Skills are broken up into [X] categories. Each skill is based out of 100. 
+            This is some more text to see how it looks.
+          </p>
+        </div>
+        <div>
+          <p>
+            Testing
+          </p>
+        </div>
+        <div>
+          <p>
+            Skills are broken up into [X] categories. Each skill is based out of 100. 
+            This is some more text to see how it looks.
+          </p>
         </div>
       </div>
     </div>
