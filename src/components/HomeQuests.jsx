@@ -2,6 +2,12 @@ import React from 'react';
 import { BsCheckCircle, BsCheckCircleFill } from 'react-icons/bs';
 
 const HomeQuests = () => {
+
+  const [dailyQuest1, setDailyQuest1] = useState(false);
+  const [dailyQuest2, setDailyQuest2] = useState(false);
+  const [dailyQuest3, setDailyQuest3] = useState(false);
+  const [weeklyQuest, setWeeklyQuest] = useState(false);
+
   return (
     <div className="flex flex-col justify-center items-start max-w-2xl w-full mx-auto pt-16 pb-16">
       <h1 className="text-4xl font-bold">
@@ -22,7 +28,7 @@ const HomeQuests = () => {
           <p className="text-center">This is some filler text explaining a daily quest that you should complete.</p>
           <div className="p-2" />
           <button>
-            <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-emerald-500 duration-200" />
+            <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 duration-200" />
           </button>
         </div>
         <div className="flex flex-col p-4 border border-gray-400 hover:border-red-500 rounded-xl w-52 items-center justify-center hover:bg-secondary duration-200">
@@ -31,7 +37,7 @@ const HomeQuests = () => {
           <p className="text-center">This is some filler text explaining a daily quest that you should complete.</p>
           <div className="p-2" />
           <button>
-            <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-emerald-500 duration-200" />
+            <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 duration-200" />
           </button>
         </div>
         <div className="flex flex-col p-4 border border-gray-400 hover:border-red-500 rounded-xl w-52 items-center justify-center hover:bg-secondary duration-200">
@@ -40,7 +46,7 @@ const HomeQuests = () => {
           <p className="text-center">This is some filler text explaining a daily quest that you should complete.</p>
           <div className="p-2" />
           <button>
-            <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-emerald-500 duration-200" />
+            <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 duration-200" />
           </button>
         </div>
       </div>
@@ -55,7 +61,7 @@ const HomeQuests = () => {
         </p>
         <div className="p-2" />
         <button>
-          <BsCheckCircle className="h-8 w-8 text-gray-400 active:bg-emerald-500 hover:text-emerald-500 duration-200 rounded-full" />
+          <BsCheckCircle className="h-8 w-8 text-gray-400 active:bg-amber-400 hover:text-amber-400 duration-200 rounded-full" />
         </button>
       </div>
     </div>
