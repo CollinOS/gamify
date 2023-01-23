@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomeHero = () => {
   return (
-    <div className="flex flex-col justify-center items-start max-w-2xl border-purple-800 mx-auto pt-16 pb-16">
+    <div className="flex flex-col justify-center items-start max-w-2xl mx-auto pt-16 pb-16">
       <h1 className="text-4xl font-bold">
         Skills
       </h1>
@@ -12,7 +12,7 @@ const HomeHero = () => {
         This is some more text to see how it looks.
       </p>
       <div className="p-4"/>
-      <div className="bg-gradient-to-br from-red-500 via-gray-900 to-red-500 rounded-xl p-[1px] hover:drop-shadow-2xl duration-200">
+      <div className="bg-gradient-to-br from-red-500 via-secondary to-red-500 rounded-xl p-[1px] hover:drop-shadow-2xl duration-200">
         <div className="bg-primary p-3 rounded-xl flex flex-row justify-between">
           <p className="w-96">
             Strength
@@ -24,7 +24,7 @@ const HomeHero = () => {
         </div>
       </div>
       <div className="p-2"/>
-      <div className="bg-gradient-to-br from-red-500 via-gray-900 to-red-500 rounded-xl p-[1px]">
+      <div className="bg-gradient-to-br from-red-500 via-secondary to-red-500 rounded-xl p-[1px]">
         <div className="bg-primary p-3 rounded-xl flex flex-row justify-between">
           <p className="w-96">
             Wisdom
@@ -36,7 +36,7 @@ const HomeHero = () => {
         </div>
       </div>
       <div className="p-2"/>
-      <div className="bg-gradient-to-br from-red-500 via-gray-900 to-red-500 rounded-xl p-[1px]">
+      <div className="bg-gradient-to-br from-red-500 via-secondary to-red-500 rounded-xl p-[1px]">
         <div className="bg-primary p-3 rounded-xl flex flex-row justify-between">
           <p className="w-96">
             Agility

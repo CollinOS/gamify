@@ -30,10 +30,21 @@ const Navbar = () => {
           </NavLink>
           <div className="flex p-4"/>
           <NavLink 
+            to="/quests" 
+            className={({ isActive }) =>
+              isActive 
+              ? "font-semibold border-b b-2 border-red-500"
+              : "font-normal"
+            }
+          >
+            Quests
+          </NavLink>
+          <div className="flex p-4"/>
+          <NavLink 
             to="/test" 
             className={({ isActive }) =>
               isActive 
-              ? "font-semibold border-b b-2 border-emerald-500"
+              ? "font-semibold border-b b-2 border-red-500"
               : "font-normal"
             }
           >
