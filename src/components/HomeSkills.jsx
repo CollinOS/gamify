@@ -12,35 +12,35 @@ const HomeHero = () => {
         This is some more text to see how it looks.
       </p>
       <div className="p-4"/>
-      <div className="grid grid-cols-2 gap-4">
-        <div>
-          <p>
+      <div className="bg-gradient-to-br from-red-500 via-gray-900 to-red-500 rounded-xl p-[1px] hover:drop-shadow-2xl duration-200">
+        <div className="bg-primary p-3 rounded-xl flex flex-row justify-between">
+          <p className="w-96">
             Strength
           </p>
-        </div>
-        <div>
           <p>
             Skills are broken up into [X] categories. Each skill is based out of 100. 
             This is some more text to see how it looks.
-        </p>
+          </p>
         </div>
-        <div>
-          <p>
+      </div>
+      <div className="p-2"/>
+      <div className="bg-gradient-to-br from-red-500 via-gray-900 to-red-500 rounded-xl p-[1px]">
+        <div className="bg-primary p-3 rounded-xl flex flex-row justify-between">
+          <p className="w-96">
             Wisdom
           </p>
-        </div>
-        <div>
           <p>
             Skills are broken up into [X] categories. Each skill is based out of 100. 
             This is some more text to see how it looks.
           </p>
         </div>
-        <div>
-          <p>
-            Testing
+      </div>
+      <div className="p-2"/>
+      <div className="bg-gradient-to-br from-red-500 via-gray-900 to-red-500 rounded-xl p-[1px]">
+        <div className="bg-primary p-3 rounded-xl flex flex-row justify-between">
+          <p className="w-96">
+            Agility
           </p>
-        </div>
-        <div>
           <p>
             Skills are broken up into [X] categories. Each skill is based out of 100. 
             This is some more text to see how it looks.
