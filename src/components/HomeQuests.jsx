@@ -1,12 +1,12 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleQuest } from "../redux/questSlice";
 import { BsCheckCircle, BsCheckCircleFill } from 'react-icons/bs';
 
 const HomeQuests = () => {
 
-  // const [dailyQuest1, setDailyQuest1] = useState(false);
-  // const [dailyQuest2, setDailyQuest2] = useState(false);
-  // const [dailyQuest3, setDailyQuest3] = useState(false);
-  // const [weeklyQuest, setWeeklyQuest] = useState(false);
+  const quest = useSelector(state => state.quest);
+  const dispatch = useDispatch();
 
   return (
     <div className="flex flex-col justify-center items-start max-w-2xl w-full mx-auto pt-24 pb-24">
@@ -27,7 +27,11 @@ const HomeQuests = () => {
           <div className="p-2" />
           <p className="text-center">This is some filler text explaining a daily quest that you should complete.</p>
           <div className="p-2" />
-          <button>
+          <p>{quest}</p>
+          <button 
+            aria-label="Complete Quest"
+            onClick={() => dispatch(toggleQuest())}
+          >
             <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 duration-200" />
           </button>
         </div>
