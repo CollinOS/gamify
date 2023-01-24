@@ -3,13 +3,13 @@ import { BsCheckCircle, BsCheckCircleFill } from 'react-icons/bs';
 
 const HomeQuests = () => {
 
-  const [dailyQuest1, setDailyQuest1] = useState(false);
-  const [dailyQuest2, setDailyQuest2] = useState(false);
-  const [dailyQuest3, setDailyQuest3] = useState(false);
-  const [weeklyQuest, setWeeklyQuest] = useState(false);
+  // const [dailyQuest1, setDailyQuest1] = useState(false);
+  // const [dailyQuest2, setDailyQuest2] = useState(false);
+  // const [dailyQuest3, setDailyQuest3] = useState(false);
+  // const [weeklyQuest, setWeeklyQuest] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-start max-w-2xl w-full mx-auto pt-16 pb-16">
+    <div className="flex flex-col justify-center items-start max-w-2xl w-full mx-auto pt-24 pb-24">
       <h1 className="text-4xl font-bold">
         Quests
       </h1>
