@@ -1,11 +1,17 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleQuest } from "../redux/questSlice";
+import { toggleQuest1 } from "../redux/questSlice1";
+import { toggleQuest2 } from "../redux/questSlice2";
+import { toggleQuest3 } from "../redux/questSlice3";
 import { BsCheckCircle, BsCheckCircleFill } from 'react-icons/bs';
 
 const HomeQuests = () => {
 
-  const quest = useSelector(state => state.quest);
+  const quest = useSelector((state) => state.quest);
+  const quest1 = useSelector((state) => state.quest1);
+  const quest2 = useSelector((state) => state.quest2);
+  const quest3 = useSelector((state) => state.quest3);
   const dispatch = useDispatch();
 
   return (
@@ -27,31 +33,57 @@ const HomeQuests = () => {
           <div className="p-2" />
           <p className="text-center">This is some filler text explaining a daily quest that you should complete.</p>
           <div className="p-2" />
-          <p>{quest}</p>
-          <button 
-            aria-label="Complete Quest"
-            onClick={() => dispatch(toggleQuest())}
-          >
-            <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 duration-200" />
-          </button>
+          {quest 
+          ? <button 
+              aria-label="Complete Quest"
+              onClick={() => dispatch(toggleQuest())}
+            >
+              <BsCheckCircleFill className="h-8 w-8 text-amber-400 duration-200 active:text-secondary active:bg-amber-400 rounded-full" />
+            </button>
+          :  <button 
+              aria-label="Complete Quest"
+              onClick={() => dispatch(toggleQuest())}
+            >
+              <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 active:bg-amber-400 rounded-full duration-200" />
+            </button>}
         </div>
         <div className="flex flex-col p-4 border border-gray-400 hover:border-red-500 rounded-xl w-52 items-center justify-center hover:bg-secondary duration-200">
           <p className="font-bold">Daily</p>
           <div className="p-2" />
           <p className="text-center">This is some filler text explaining a daily quest that you should complete.</p>
           <div className="p-2" />
-          <button>
-            <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 duration-200" />
-          </button>
+          {quest1 
+          ? <button 
+              aria-label="Complete Quest"
+              onClick={() => dispatch(toggleQuest1())}
+            >
+              <BsCheckCircleFill className="h-8 w-8 text-amber-400 duration-200 active:text-secondary active:bg-amber-400 rounded-full" />
+            </button>
+          :  <button 
+              aria-label="Complete Quest"
+              onClick={() => dispatch(toggleQuest1())}
+            >
+              <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 active:bg-amber-400 rounded-full duration-200" />
+            </button>}
         </div>
         <div className="flex flex-col p-4 border border-gray-400 hover:border-red-500 rounded-xl w-52 items-center justify-center hover:bg-secondary duration-200">
           <p className="font-bold">Daily</p>
           <div className="p-2" />
           <p className="text-center">This is some filler text explaining a daily quest that you should complete.</p>
           <div className="p-2" />
-          <button>
-            <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 duration-200" />
-          </button>
+          {quest2 
+          ? <button 
+              aria-label="Complete Quest"
+              onClick={() => dispatch(toggleQuest2())}
+            >
+              <BsCheckCircleFill className="h-8 w-8 text-amber-400 duration-200 active:text-secondary active:bg-amber-400 rounded-full" />
+            </button>
+          :  <button 
+              aria-label="Complete Quest"
+              onClick={() => dispatch(toggleQuest2())}
+            >
+              <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 active:bg-amber-400 rounded-full duration-200" />
+            </button>}
         </div>
       </div>
       <div className="p-3" />
@@ -64,9 +96,19 @@ const HomeQuests = () => {
           This is some even cooler filler text explaining a daily quest that you should complete.
         </p>
         <div className="p-2" />
-        <button>
-          <BsCheckCircle className="h-8 w-8 text-gray-400 active:bg-amber-400 hover:text-amber-400 duration-200 rounded-full" />
-        </button>
+        {quest3 
+          ? <button 
+              aria-label="Complete Quest"
+              onClick={() => dispatch(toggleQuest3())}
+            >
+              <BsCheckCircleFill className="h-8 w-8 text-amber-400 duration-200 active:text-secondary active:bg-amber-400 rounded-full" />
+            </button>
+          :  <button 
+              aria-label="Complete Quest"
+              onClick={() => dispatch(toggleQuest3())}
+            >
+              <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 active:bg-amber-400 rounded-full duration-200" />
+            </button>}
       </div>
     </div>
   )

@@ -5,12 +5,10 @@ export const questSlice = createSlice({
   initialState: false,
   reducers: {
     toggleQuest: (state) => {
-      state.quest = !state.quest
+      return(!state)
     },
   },
 })
 
-// Action creators are generated for each case reducer function
 export const { toggleQuest } = questSlice.actions
-
 export default questSlice.reducer
