@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BsCheckCircle, BsCheckCircleFill } from 'react-icons/bs';
 
 const HomeQuests = () => {
+
+  const [quest, setQuest] = useState(false);
 
   return (
     <div className="flex flex-col justify-center items-start max-w-2xl w-full mx-auto pt-24 pb-24">
@@ -25,13 +27,13 @@ const HomeQuests = () => {
           {quest 
           ? <button 
               aria-label="Complete Quest"
-              onClick={() => }
+              onClick={() => toggleQuest()}
             >
               <BsCheckCircleFill className="h-8 w-8 text-amber-400 duration-200 active:text-secondary active:bg-amber-400 rounded-full" />
             </button>
           :  <button 
               aria-label="Complete Quest"
-              onClick={() => }
+              onClick={() => toggleQuest()}
             >
               <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 active:bg-amber-400 rounded-full duration-200" />
             </button>}
@@ -41,16 +43,16 @@ const HomeQuests = () => {
           <div className="p-2" />
           <p className="text-center">This is some filler text explaining a daily quest that you should complete.</p>
           <div className="p-2" />
-          {quest1 
+          {quest 
           ? <button 
               aria-label="Complete Quest"
-              onClick={() => }
+              onClick={() => toggleQuest()}
             >
               <BsCheckCircleFill className="h-8 w-8 text-amber-400 duration-200 active:text-secondary active:bg-amber-400 rounded-full" />
             </button>
           :  <button 
               aria-label="Complete Quest"
-              onClick={() => }
+              onClick={() => toggleQuest()}
             >
               <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 active:bg-amber-400 rounded-full duration-200" />
             </button>}
@@ -60,16 +62,16 @@ const HomeQuests = () => {
           <div className="p-2" />
           <p className="text-center">This is some filler text explaining a daily quest that you should complete.</p>
           <div className="p-2" />
-          {quest2 
+          {quest 
           ? <button 
               aria-label="Complete Quest"
-              onClick={() => }
+              onClick={() => toggleQuest()}
             >
               <BsCheckCircleFill className="h-8 w-8 text-amber-400 duration-200 active:text-secondary active:bg-amber-400 rounded-full" />
             </button>
           :  <button 
               aria-label="Complete Quest"
-              onClick={() => }
+              onClick={() => toggleQuest()}
             >
               <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 active:bg-amber-400 rounded-full duration-200" />
             </button>}
@@ -85,16 +87,16 @@ const HomeQuests = () => {
           This is some even cooler filler text explaining a daily quest that you should complete.
         </p>
         <div className="p-2" />
-        {quest3 
+        {quest 
           ? <button 
               aria-label="Complete Quest"
-              onClick={() => }
+              onClick={() => toggleQuest()}
             >
               <BsCheckCircleFill className="h-8 w-8 text-amber-400 duration-200 active:text-secondary active:bg-amber-400 rounded-full" />
             </button>
           :  <button 
               aria-label="Complete Quest"
-              onClick={() => }
+              onClick={() => toggleQuest()}
             >
               <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 active:bg-amber-400 rounded-full duration-200" />
             </button>}
