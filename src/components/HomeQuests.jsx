@@ -1,18 +1,7 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { toggleQuest } from "../redux/questSlice";
-import { toggleQuest1 } from "../redux/questSlice1";
-import { toggleQuest2 } from "../redux/questSlice2";
-import { toggleQuest3 } from "../redux/questSlice3";
 import { BsCheckCircle, BsCheckCircleFill } from 'react-icons/bs';
 
 const HomeQuests = () => {
-
-  const quest = useSelector((state) => state.quest);
-  const quest1 = useSelector((state) => state.quest1);
-  const quest2 = useSelector((state) => state.quest2);
-  const quest3 = useSelector((state) => state.quest3);
-  const dispatch = useDispatch();
 
   return (
     <div className="flex flex-col justify-center items-start max-w-2xl w-full mx-auto pt-24 pb-24">
@@ -36,13 +25,13 @@ const HomeQuests = () => {
           {quest 
           ? <button 
               aria-label="Complete Quest"
-              onClick={() => dispatch(toggleQuest())}
+              onClick={() => }
             >
               <BsCheckCircleFill className="h-8 w-8 text-amber-400 duration-200 active:text-secondary active:bg-amber-400 rounded-full" />
             </button>
           :  <button 
               aria-label="Complete Quest"
-              onClick={() => dispatch(toggleQuest())}
+              onClick={() => }
             >
               <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 active:bg-amber-400 rounded-full duration-200" />
             </button>}
@@ -55,13 +44,13 @@ const HomeQuests = () => {
           {quest1 
           ? <button 
               aria-label="Complete Quest"
-              onClick={() => dispatch(toggleQuest1())}
+              onClick={() => }
             >
               <BsCheckCircleFill className="h-8 w-8 text-amber-400 duration-200 active:text-secondary active:bg-amber-400 rounded-full" />
             </button>
           :  <button 
               aria-label="Complete Quest"
-              onClick={() => dispatch(toggleQuest1())}
+              onClick={() => }
             >
               <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 active:bg-amber-400 rounded-full duration-200" />
             </button>}
@@ -74,13 +63,13 @@ const HomeQuests = () => {
           {quest2 
           ? <button 
               aria-label="Complete Quest"
-              onClick={() => dispatch(toggleQuest2())}
+              onClick={() => }
             >
               <BsCheckCircleFill className="h-8 w-8 text-amber-400 duration-200 active:text-secondary active:bg-amber-400 rounded-full" />
             </button>
           :  <button 
               aria-label="Complete Quest"
-              onClick={() => dispatch(toggleQuest2())}
+              onClick={() => }
             >
               <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 active:bg-amber-400 rounded-full duration-200" />
             </button>}
@@ -99,13 +88,13 @@ const HomeQuests = () => {
         {quest3 
           ? <button 
               aria-label="Complete Quest"
-              onClick={() => dispatch(toggleQuest3())}
+              onClick={() => }
             >
               <BsCheckCircleFill className="h-8 w-8 text-amber-400 duration-200 active:text-secondary active:bg-amber-400 rounded-full" />
             </button>
           :  <button 
               aria-label="Complete Quest"
-              onClick={() => dispatch(toggleQuest3())}
+              onClick={() => }
             >
               <BsCheckCircle className="h-8 w-8 text-gray-400 hover:text-amber-400 active:bg-amber-400 rounded-full duration-200" />
             </button>}
