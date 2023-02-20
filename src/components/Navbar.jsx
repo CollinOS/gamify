@@ -19,7 +19,7 @@ const Navbar = () => {
         </div>
         <div className="flex flex-row items-center">
           <NavLink 
-            to="/profile" 
+            to="/skill-card" 
             className={({ isActive }) =>
               isActive 
               ? "font-semibold border-b b-2 border-red-500"
@@ -30,7 +30,7 @@ const Navbar = () => {
           </NavLink>
           <div className="flex p-4"/>
           <NavLink 
-            to="/quests" 
+            to="/profile" 
             className={({ isActive }) =>
               isActive 
               ? "font-semibold border-b b-2 border-red-500"

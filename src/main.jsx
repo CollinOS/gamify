@@ -6,6 +6,7 @@ import Profile from "./routes/profile";
 import Start from "./routes/start";
 import ErrorPage from "./routes/error-page";
 import './assets/styles/index.css';
+import SkillCard from "./routes/skill-card";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/start",
     element: <Start />,
+  },
+  {
+    path: "/skill-card",
+    element: <SkillCard />,
   }
 ]);
 
