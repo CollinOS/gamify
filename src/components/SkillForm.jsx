@@ -9,15 +9,9 @@ export default function SkillForm() {
   return (
     <div className="max-w-2xl mx-auto pt-24 pb-24 w-full">
       <div>
-        <SliderInput label="Strength" value={strength} set={setStrength}>
-          x
-        </SliderInput>
-        <SliderInput label="Wisdom" value={wisdom} set={setWisdom}>
-          x
-        </SliderInput>
-        <SliderInput label="Agility" value={agility} set={setAgility}>
-          x
-        </SliderInput>
+        <SliderInput label="Strength" value={strength} set={setStrength} />
+        <SliderInput label="Wisdom" value={wisdom} set={setWisdom} />
+        <SliderInput label="Agility" value={agility} set={setAgility} />
       </div>
     </div>
   );

@@ -1,10 +1,6 @@
 import React from "react";
 
-export default function Input({
-  label,
-  value,
-  set,
-}) {
+export default function Input({label, value, set}) {
   return (
     <div className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full pb-8">
       <p>{label}</p>
